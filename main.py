@@ -22,7 +22,7 @@ from tensorflow.keras.models import Sequential
 input_shape = (train_features.shape[1], 4)
 
 # Define the model
-model = model.create_model(input_shape)
+model = m.create_model(input_shape)
 
 # Compile the model
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['binary_accuracy'])
